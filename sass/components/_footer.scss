@@ -1,0 +1,101 @@
+.page-footer {
+  background-color: var(--bg-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__address--light {
+  color: var(--title-text-color-light);
+}
+
+.footer-content {
+  @extend .container;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((50% - 45px) / 2);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.footer-contacts {
+  background-color: var(--bg-color-dark);
+}
+
+.footer-social__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social__icon-list {
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social__icon-list {
+    justify-content: flex-start;
+  }
+}
+
+.footer-social__icon-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-social__icon-list .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color-light);
+}
+
+.footer-social__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social__icon-link .icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social__icon-link:hover .icon,
+.footer-social__icon-link:focus .icon {
+  fill: var(--title-text-color-light);
+}
+
+.footer-social__icon-link:hover,
+.footer-social__icon-link:focus {
+  background-color: var(--accent-color);
+}
