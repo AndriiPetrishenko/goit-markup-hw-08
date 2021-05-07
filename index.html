@@ -127,24 +127,16 @@
     </div>
 
     <main>
-      <!-- Герой -->
-      <div class="overlay-heroe">
-        <section>
-          <div class="container heroe-section">
-            <h1 class="heroe-section__title">
-              Эффективные решения <br />для вашего бизнеса
-            </h1>
-            <button
-              data-modal-open
-              class="heroe-section__btn"
-              name="btn_book_service"
-              type="button"
-            >
-              Заказать услугу
-            </button>
-          </div>
-        </section>
-      </div>
+      <section class="heroe-section">
+        <div class="heroe-section__container">
+          <h1 class="heroe-section__title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button data-modal-open type="button" class="heroe-section-btn">
+            Заказать услугу
+          </button>
+        </div>
+      </section>
 
       <!-- Наши ценности -->
       <section>
@@ -210,11 +202,20 @@
           <ul class="list activity-list">
             <li>
               <div class="activity-list__card">
-                <img
-                  src="./images/our_activity_web_dev.jpg"
-                  alt="Работа Web-разработчика"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activity/act-1_1200.jpg     1x,
+                      ./images/activity/act-1_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/activity/act-1_1200.jpg"
+                    width="370"
+                    alt="Работа Web-разработчика"
+                  />
+                </picture>
                 <div class="activity-list__label">
                   <p>Десктопные приложения</p>
                 </div>
@@ -222,11 +223,20 @@
             </li>
             <li>
               <div class="activity-list__card">
-                <img
-                  src="./images/our_activity_ua_ux_design.jpg"
-                  alt="Работа UI-UX-дизайнера"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activity/act-2_1200.jpg     1x,
+                      ./images/activity/act-2_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/activity/act-2_1200.jpg"
+                    width="370"
+                    alt="Работа UI-UX-дизайнера"
+                  />
+                </picture>
                 <div class="activity-list__label">
                   <p>Мобильные приложения</p>
                 </div>
@@ -234,11 +244,20 @@
             </li>
             <li>
               <div class="activity-list__card">
-                <img
-                  src="./images/our_activity_web_design.jpg"
-                  alt="Работа Web-дизайнера"
-                  width="370px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activity/act-3_1200.jpg     1x,
+                      ./images/activity/act-3_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/activity/act-3_1200.jpg"
+                    width="370"
+                    alt="Работа Web-дизайнера"
+                  />
+                </picture>
                 <div class="activity-list__label">
                   <p>Дизайнерские решения</p>
                 </div>
@@ -255,10 +274,34 @@
           <ul class="list team-section__list">
             <li class="team-section__item">
               <div class="team-section__card">
-                <img
-                  src="./images/our_team_demianenko.jpg"
-                  alt="Игорь Демьяненко - Product Designer"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/team-1_1200.jpg     1x,
+                      ./images/team/team-1_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-1_768.jpg     1x,
+                      ./images/team/team-1_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-1_480.jpg     1x,
+                      ./images/team/team-1_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/team/team-1_1200.jpg"
+                    width="450"
+                    alt="Игорь Демьяненко - Product Designer"
+                  />
+                </picture>
                 <h3 class="team-section__title">Игорь Демьяненко</h3>
                 <p class="team-section__meta">Product Designer</p>
                 <ul class="list team-section__social-icon-list">
@@ -315,10 +358,34 @@
             </li>
             <li class="team-section__item">
               <div class="team-section__card">
-                <img
-                  src="./images/our_team_repina.jpg"
-                  alt="Ольга Репина - Frontend Developer"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/team-2_1200.jpg     1x,
+                      ./images/team/team-2_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-2_768.jpg     1x,
+                      ./images/team/team-2_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-2_480.jpg     1x,
+                      ./images/team/team-2_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/team/team-2_1200.jpg"
+                    width="450"
+                    alt="Ольга Репина - Frontend Developer"
+                  />
+                </picture>
                 <h3 class="team-section__title">Ольга Репина</h3>
                 <p class="team-section__meta">Frontend Developer</p>
                 <ul class="list team-section__social-icon-list">
@@ -375,10 +442,34 @@
             </li>
             <li class="team-section__item">
               <div class="team-section__card">
-                <img
-                  src="./images/our_team_tarasov.jpg"
-                  alt="Николай Тарасов - Marketing"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/team-3_1200.jpg     1x,
+                      ./images/team/team-3_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-3_768.jpg     1x,
+                      ./images/team/team-3_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-3_480.jpg     1x,
+                      ./images/team/team-3_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/team/team-3_1200.jpg"
+                    width="450"
+                    alt="Николай Тарасов - Marketing"
+                  />
+                </picture>
                 <h3 class="team-section__title">Николай Тарасов</h3>
                 <p class="team-section__meta">Marketing</p>
                 <ul class="list team-section__social-icon-list">
@@ -435,10 +526,34 @@
             </li>
             <li class="team-section__item">
               <div class="team-section__card">
-                <img
-                  src="./images/our_team_ermakov.jpg"
-                  alt="Михаил Ермаков - UI Designer"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/team-4_1200.jpg     1x,
+                      ./images/team/team-4_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-4_768.jpg     1x,
+                      ./images/team/team-4_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/team-4_480.jpg     1x,
+                      ./images/team/team-4_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/team/team-4_1200.jpg"
+                    width="450"
+                    alt="Михаил Ермаков - UI Designer"
+                  />
+                </picture>
                 <h3 class="team-section__title">Михаил Ермаков</h3>
                 <p class="team-section__meta">UI Designer</p>
                 <ul class="list team-section__social-icon-list">

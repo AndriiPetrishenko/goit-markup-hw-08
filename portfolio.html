@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <!-- Нэдер -->
+    <!-- Хэдер -->
     <header class="page-header">
       <div class="container header-pos">
         <!-- Главная навигация -->
@@ -33,10 +33,10 @@
           <nav>
             <ul class="list nav__list">
               <li class="nav__item">
-                <a class="link current" href="./">Студия</a>
+                <a class="link" href="./">Студия</a>
               </li>
               <li class="nav__item">
-                <a class="link" href="./portfolio.html">Портфолио</a>
+                <a class="link current" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav__item"><a class="link" href="">Контакты</a></li>
             </ul>
@@ -154,7 +154,35 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img src="./images/portfolio/img.jpg" alt="Пример сайта" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-1_1200.jpg     1x,
+                      ./images/portfolio/port-1_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-1_768.jpg     1x,
+                      ./images/portfolio/port-1_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-1_480.jpg     1x,
+                      ./images/portfolio/port-1_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-1_1200.jpg"
+                    width="450"
+                    alt="Пример сайта"
+                  />
+                </picture>
+
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -172,10 +200,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img
-                  src="./images/portfolio/img-1.jpg"
-                  alt="Пример дизайна постера"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-2_1200.jpg     1x,
+                      ./images/portfolio/port-2_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-2_768.jpg     1x,
+                      ./images/portfolio/port-2_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-2_480.jpg     1x,
+                      ./images/portfolio/port-2_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-2_1200.jpg"
+                    width="450"
+                    alt="Пример дизайна постера"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -193,10 +245,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img
-                  src="./images/portfolio/img-2.jpg"
-                  alt="Пример приложения"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-3_1200.jpg     1x,
+                      ./images/portfolio/port-3_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-3_768.jpg     1x,
+                      ./images/portfolio/port-3_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-3_480.jpg     1x,
+                      ./images/portfolio/port-3_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-3_1200.jpg"
+                    width="450"
+                    alt="Пример приложения"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -214,10 +290,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img
-                  src="./images/portfolio/img-3.jpg"
-                  alt="Пример маркетинговой компании"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-4_1200.jpg     1x,
+                      ./images/portfolio/port-4_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-4_768.jpg     1x,
+                      ./images/portfolio/port-4_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-4_480.jpg     1x,
+                      ./images/portfolio/port-4_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-4_1200.jpg"
+                    width="450"
+                    alt="Пример маркетинговой кампании"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -235,7 +335,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img src="./images/portfolio/img-4.jpg" alt="Пример сайта" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-5_1200.jpg     1x,
+                      ./images/portfolio/port-5_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-5_768.jpg     1x,
+                      ./images/portfolio/port-5_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-5_480.jpg     1x,
+                      ./images/portfolio/port-5_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-5_1200.jpg"
+                    width="450"
+                    alt="Пример сайта"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -253,7 +380,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img src="./images/portfolio/img-5.jpg" alt="Пример сайта" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-6_1200.jpg     1x,
+                      ./images/portfolio/port-6_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-6_768.jpg     1x,
+                      ./images/portfolio/port-6_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-6_480.jpg     1x,
+                      ./images/portfolio/port-6_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-6_1200.jpg"
+                    width="450"
+                    alt="Пример сайта"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -271,7 +425,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img src="./images/portfolio/img-6.jpg" alt="Пример дизайна" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-7_1200.jpg     1x,
+                      ./images/portfolio/port-7_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-7_768.jpg     1x,
+                      ./images/portfolio/port-7_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-7_480.jpg     1x,
+                      ./images/portfolio/port-7_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-7_1200.jpg"
+                    width="450"
+                    alt="Пример дизайна"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -289,10 +470,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img
-                  src="./images/portfolio/img-7.jpg"
-                  alt="Пример маркетинговой компании"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-8_1200.jpg     1x,
+                      ./images/portfolio/port-8_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-8_768.jpg     1x,
+                      ./images/portfolio/port-8_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-8_480.jpg     1x,
+                      ./images/portfolio/port-8_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-8_1200.jpg"
+                    width="450"
+                    alt="Пример маркетинговой кампании"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
@@ -310,10 +515,34 @@
           <li class="galery-item">
             <a class="link galery-link" href="">
               <div class="galery-overflow">
-                <img
-                  src="./images/portfolio/img-8.jpg"
-                  alt="Пример приложения"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/port-9_1200.jpg     1x,
+                      ./images/portfolio/port-9_1200_@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-9_768.jpg     1x,
+                      ./images/portfolio/port-9_768_@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/port-9_480.jpg     1x,
+                      ./images/portfolio/port-9_480_@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/portfolio/port-9_1200.jpg"
+                    width="450"
+                    alt="Пример приложения"
+                  />
+                </picture>
                 <div class="galery-item-description">
                   <p>
                     Технокряк это современная площадка распространения
